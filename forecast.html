@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>حِسبة — ذكاء مالي أوضح</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-current-page="forecast">
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="القائمة الرئيسية">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">ح</div>
+        <div><div class="brand-name">حِسبة</div><div class="brand-caption">ذكاء مالي أوضح</div></div>
+      </div>
+
+      <button class="workspace-switch" type="button" aria-label="مساحة العمل الشخصية">
+        <span><small>مساحة العمل</small><strong>أموالي الشخصية</strong></span>
+        <span aria-hidden="true">⌄</span>
+      </button>
+
+      <nav>
+        <div class="nav-group-label">إدارة المال</div>
+        <div class="nav-list">
+          <button class="nav-item" data-page="dashboard" type="button"><span class="nav-icon">⌂</span>الرئيسية</button>
+          <button class="nav-item" data-page="transactions" type="button"><span class="nav-icon">↔</span>المعاملات</button>
+          <button class="nav-item" data-page="budgets" type="button"><span class="nav-icon">▤</span>الميزانيات</button>
+          <button class="nav-item active" data-page="forecast" type="button"><span class="nav-icon">⌁</span>التدفق النقدي</button>
+          <button class="nav-item" data-page="simulator" type="button"><span class="nav-icon">◇</span>محاكي القرارات</button>
+          <button class="nav-item" data-page="debts" type="button"><span class="nav-icon">◷</span>الديون والالتزامات</button>
+          <button class="nav-item" data-page="history" type="button"><span class="nav-icon">◴</span>سجل القرارات</button>
+        </div>
+        <div class="nav-group-label" style="margin-top:24px">الحساب</div>
+        <div class="nav-list">
+          <button class="nav-item" data-page="settings" type="button"><span class="nav-icon">⚙</span>الإعدادات</button>
+        </div>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <strong>قرارك يبدأ بفهم أوضح</strong>
+          <p>راجع بياناتك وافتراضاتك قبل الاعتماد على أي توقع مالي.</p>
+        </div>
+        <div class="user-chip">
+          <div class="avatar" aria-hidden="true">م</div>
+          <div><strong>مساحة تجريبية</strong><small>نموذج واجهة أولي</small></div>
+        </div>
+      </div>
+    </aside>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <div style="display:flex;align-items:center;gap:12px">
+          <button class="mobile-menu" id="mobileMenu" type="button" aria-label="فتح القائمة">☰</button>
+          <div class="crumb">مساحة العمل <span aria-hidden="true">/</span> <strong id="breadcrumb">التدفق النقدي</strong></div>
+        </div>
+        <div class="top-actions">
+          <span class="top-date">الخميس، ١٣ نوفمبر ٢٠٢٦</span>
+          <button class="icon-button" id="notificationButton" type="button" aria-label="التنبيهات">♧<span class="notification-dot"></span></button>
+          <button class="icon-button" data-page="settings" type="button" aria-label="الإعدادات">⚙</button>
+        </div>
+      </header>
+
+      <div class="content">
+<div class="demo-note"><span aria-hidden="true">ⓘ</span><span>واجهة تجريبية ببيانات توضيحية فقط — لا تمثل حساباً أو توقعاً مالياً حقيقياً.</span></div>
+
+<section class="page active" id="page-forecast" aria-labelledby="forecast-title">
+          <div class="page-heading"><div><h1 id="forecast-title">التدفق النقدي</h1><p class="subtitle">افهم ما قد يحدث للسيولة، وما المعلومات التي يعتمد عليها التوقع.</p></div><select class="control" aria-label="الفترة المتوقعة"><option>الأربعة أسابيع القادمة</option><option>الأسبوعان القادمان</option></select></div>
+          <div class="forecast-banner"><div><small>الرصيد المتوقع في نهاية الفترة · مثال افتراضي</small><strong>EGP 18,550</strong></div><div class="confidence">تقدير توضيحي · ليس ضماناً</div></div>
+          <div class="grid dashboard-grid">
+            <article class="card"><div class="card-head"><div><h2 class="card-title">الرصيد عبر الوقت</h2><div class="card-caption">القيم المستقبلية تقديرية، وليست معاملات مؤكدة</div></div></div><div class="card-body"><div class="chart-wrap" role="img" aria-label="خط توضيحي لتغير الرصيد المتوقع، جميع القيم افتراضية"><svg viewBox="0 0 660 220" preserveAspectRatio="none" aria-hidden="true"><line class="grid-line" x1="43" y1="30" x2="650" y2="30"/><line class="grid-line" x1="43" y1="80" x2="650" y2="80"/><line class="grid-line" x1="43" y1="130" x2="650" y2="130"/><line class="grid-line" x1="43" y1="180" x2="650" y2="180"/><path class="chart-line" d="M50 72 L160 85 L270 98"/><path class="chart-forecast" d="M270 98 L385 113 L495 130 L610 149"/><circle class="chart-point" cx="50" cy="72" r="4"/><circle class="chart-point" cx="160" cy="85" r="4"/><circle class="chart-point" cx="270" cy="98" r="4"/><text class="chart-label" x="45" y="205">اليوم</text><text class="chart-label" x="170" y="205">أسبوع ١</text><text class="chart-label" x="300" y="205">أسبوع ٢</text><text class="chart-label" x="440" y="205">أسبوع ٣</text><text class="chart-label" x="570" y="205">أسبوع ٤</text></svg></div></div></article>
+            <article class="card"><div class="card-head"><div><h2 class="card-title">عناصر تؤثر في التوقع</h2><div class="card-caption">مصادر بيانات افتراضية</div></div></div><div class="card-body"><div class="obligation-list"><div class="obligation-row"><div><div class="obligation-name">دخل متوقع</div><div class="obligation-date">بعد ٧ أيام · يحتاج تأكيداً</div></div><div class="obligation-amount positive">+32,000</div></div><div class="obligation-row"><div><div class="obligation-name">قسط مجدول</div><div class="obligation-date">بعد ٣ أيام · مثال</div></div><div class="obligation-amount negative">−2,500</div></div><div class="obligation-row"><div><div class="obligation-name">مصروفات متوقعة</div><div class="obligation-date">خلال الفترة · تقدير</div></div><div class="obligation-amount negative">−4,200</div></div></div><details class="assumptions"><summary>الافتراضات وجودة البيانات</summary><p>هذه الشاشة تعرض بيانات افتراضية للتصميم. في المنتج، ينبغي توضيح مصدر كل قيمة، وتاريخ تحديثها، وما إذا كانت مؤكدة أو مقدرة. لا يوجد هنا تكامل مصرفي مفترض.</p></details></div></article>
+          </div>
+          <div class="warning-card section-gap"><div class="warning-title"><span>ⓘ</span> تنبيه مهم حول التوقعات</div><p>التوقع أداة للمساعدة على التخطيط وليس ضماناً لما سيحدث. راجع البيانات والافتراضات قبل اتخاذ قرار.</p></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+    (() => {
+      const pageTitles = {
+        dashboard: "الرئيسية", transactions: "المعاملات", budgets: "الميزانيات",
+        forecast: "التدفق النقدي", simulator: "محاكي القرارات",
+        debts: "الديون والالتزامات", history: "سجل القرارات", settings: "الإعدادات"
+      };
+      const sidebar = document.getElementById("sidebar");
+      document.querySelectorAll(".nav-item[data-page]").forEach(item => { if (item.dataset.page === document.body.dataset.currentPage) item.classList.add("active"); else item.classList.remove("active"); });
+      const overlay = document.getElementById("mobileOverlay");
+      const toast = document.getElementById("toast");
+      let activeFilter = "all";
+      let toastTimer;
+
+      function notify(message) {
+        toast.textContent = message;
+        toast.classList.add("show");
+        window.clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(() => toast.classList.remove("show"), 2800);
+      }
+
+      function closeMobileNav() {
+        sidebar.classList.remove("open");
+        overlay.classList.remove("open");
+      }
+
+      function showPage(name) { if (pageTitles[name]) window.location.href = name === "dashboard" ? "index.html" : `${name}.html`; }
+
+      document.addEventListener("click", event => {
+        const pageControl = event.target.closest("[data-page]");
+        if (pageControl) {
+          event.preventDefault();
+          showPage(pageControl.dataset.page);
+        }
+        const openControl = event.target.closest("[data-open-modal]");
+        if (openControl) {
+          document.getElementById(openControl.dataset.openModal).classList.add("open");
+          window.setTimeout(() => document.getElementById("transactionDescription").focus(), 0);
+        }
+        if (event.target.matches("[data-close-modal]") || event.target.classList.contains("modal-backdrop")) {
+          event.target.closest(".modal-backdrop")?.classList.remove("open");
+          if (event.target.classList.contains("modal-backdrop")) event.target.classList.remove("open");
+        }
+      });
+
+      document.getElementById("mobileMenu")?.addEventListener("click", () => {
+        sidebar.classList.add("open");
+        overlay.classList.add("open");
+      });
+      overlay.addEventListener("click", closeMobileNav);
+      document.getElementById("notificationButton")?.addEventListener("click", () => notify("لا توجد تنبيهات فعلية في هذه المعاينة."));
+
+      document.getElementById("transactionForm")?.addEventListener("submit", event => {
+        event.preventDefault();
+        const type = document.getElementById("transactionType").value;
+        const description = document.getElementById("transactionDescription").value.trim();
+        const category = document.getElementById("transactionCategory").value.trim();
+        const amount = Number(document.getElementById("transactionAmount").value);
+        const dateValue = document.getElementById("transactionDate").value;
+        if (!description || !category || !Number.isFinite(amount) || amount <= 0 || !dateValue) {
+          notify("راجع الحقول المطلوبة والمبلغ.");
+          return;
+        }
+        const date = new Date(`${dateValue}T12:00:00`);
+        const formattedDate = new Intl.DateTimeFormat("ar-EG", { day: "numeric", month: "long", year: "numeric" }).format(date);
+        const row = document.createElement("tr");
+        row.dataset.kind = type;
+        const kindLabel = type === "income" ? "دخل" : "مصروف";
+        const sign = type === "income" ? "+" : "−";
+        const amountClass = type === "income" ? "positive" : "negative";
+        row.innerHTML = `<td></td><td></td><td><span class="type-pill ${type === "income" ? "pill-income" : "pill-expense"}">${kindLabel}</span></td><td></td><td><span class="status-pill pill-neutral">توضيحي</span></td><td class="amount ${amountClass}"></td>`;
+        row.children[0].textContent = description;
+        row.children[1].textContent = category;
+        row.children[3].textContent = formattedDate;
+        row.children[5].textContent = `${sign} ${new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(amount)} EGP`;
+        document.getElementById("transactionRows").prepend(row);
+        event.target.reset();
+        document.getElementById("transactionModal").classList.remove("open");
+        applyTransactionFilters();
+        notify("أُضيفت المعاملة إلى معاينة الواجهة فقط.");
+      });
+
+      function applyTransactionFilters() {
+        const query = document.getElementById("transactionSearch").value.trim().toLocaleLowerCase("ar");
+        const rows = [...document.querySelectorAll("#transactionRows tr")];
+        let visible = 0;
+        rows.forEach(row => {
+          const matchesType = activeFilter === "all" || row.dataset.kind === activeFilter;
+          const matchesQuery = row.textContent.toLocaleLowerCase("ar").includes(query);
+          const show = matchesType && matchesQuery;
+          row.hidden = !show;
+          if (show) visible += 1;
+        });
+        document.getElementById("transactionEmpty").hidden = visible !== 0;
+      }
+      document.getElementById("transactionSearch")?.addEventListener("input", applyTransactionFilters);
+      document.querySelectorAll("[data-filter]").forEach(button => button.addEventListener("click", () => {
+        activeFilter = button.dataset.filter;
+        document.querySelectorAll("[data-filter]").forEach(filter => filter.classList.toggle("active", filter === button));
+        applyTransactionFilters();
+      }));
+
+      document.getElementById("compareButton")?.addEventListener("click", () => {
+        const amount = Number(document.getElementById("purchaseAmount").value);
+        const count = Number(document.getElementById("installmentCount").value);
+        if (!Number.isFinite(amount) || amount <= 0 || !Number.isFinite(count) || count < 1) {
+          notify("أدخل مبلغاً وعدداً صالحين للمقارنة.");
+          return;
+        }
+        const baseline = 18550;
+        const firstPayment = amount / count;
+        const fmt = value => `EGP ${new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(Math.round(value))}`;
+        document.getElementById("baselineLiquidity").textContent = fmt(baseline);
+        document.getElementById("cashLiquidity").textContent = fmt(baseline - amount);
+        document.getElementById("installmentLiquidity").textContent = fmt(baseline - firstPayment);
+        document.getElementById("scenarioTotal").textContent = fmt(amount);
+        document.getElementById("firstPayment").textContent = fmt(firstPayment);
+        document.getElementById("scenarioCount").textContent = new Intl.NumberFormat("ar-EG").format(count);
+        notify("تم تحديث المقارنة الافتراضية. راجع الافتراضات قبل تفسيرها.");
+      });
+      document.querySelectorAll("[data-scenario]").forEach(card => card.addEventListener("click", () => {
+        document.querySelectorAll("[data-scenario]").forEach(item => item.classList.toggle("selected", item === card));
+      }));
+      document.getElementById("saveScenarioButton")?.addEventListener("click", () => notify("حُفظت المقارنة في هذه المعاينة فقط."));
+      document.getElementById("confirmDecisionButton")?.addEventListener("click", () => {
+        if (window.confirm("هذا نموذج تجريبي فقط. هل تريد إضافة سجل توضيحي إلى سجل القرارات؟")) {
+          showPage("history");
+          notify("لم ينفذ أي قرار مالي. هذه المعاينة لا تحفظ بيانات دائمة.");
+        }
+      });
+      document.getElementById("newBudgetButton")?.addEventListener("click", () => notify("إنشاء الميزانيات غير موصول بحفظ دائم في هذه المعاينة."));
+      document.getElementById("budgetAdjustButton")?.addEventListener("click", () => notify("راجع المثال التوضيحي أسفل توزيع الميزانية."));
+      document.getElementById("reviewBudgetButton")?.addEventListener("click", () => notify("هذا تعديل افتراضي؛ لا توجد بيانات فعلية لمراجعتها."));
+      document.getElementById("confirmBudgetButton")?.addEventListener("click", () => {
+        if (window.confirm("تأكيد المثال يغيّر الواجهة التجريبية فقط، ولا يعدل ميزانية حقيقية. هل تريد المتابعة؟")) notify("تم تأكيد المثال داخل المعاينة فقط.");
+      });
+      document.getElementById("addDebtButton")?.addEventListener("click", () => notify("يمكن استعراض الالتزامات التوضيحية فقط في هذا النموذج."));
+      document.getElementById("saveSettingsButton")?.addEventListener("click", () => notify("حُفظت الإعدادات في المعاينة الحالية فقط."));
+      document.querySelectorAll("[data-history-detail]").forEach(button => button.addEventListener("click", () => {
+        window.alert("تفاصيل توضيحية: هذه مقارنة تجريبية. بيانات النتيجة الفعلية غير متاحة في هذا النموذج.");
+      }));
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+          document.querySelectorAll(".modal-backdrop.open").forEach(modal => modal.classList.remove("open"));
+          closeMobileNav();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
